@@ -169,9 +169,7 @@ def chapter_1(doc):
             "The dataset is a cross-sectional snapshot rather than a longitudinal event log. As a "
             "result, the model cannot capture the effect of a retention campaign that has already "
             "been run, nor can it account for seasonality. These limitations are discussed in "
-            "Chapter 11. The project nevertheless covers the complete applied workflow - data "
-            "audit, exploration, feature engineering, model selection, evaluation, interpretation "
-            "and deployment - which is the educational and professional objective of the internship."
+            "Chapter 11."
         ),
     )
 
@@ -341,12 +339,8 @@ def chapter_2(doc):
     body(
         doc,
         (
-            "The most recent shift is deployment. Streamlit, launched in 2019, allows a Python "
-            "script to become an interactive web application without front-end code. This lowered "
-            "the barrier between analysis and use: a model can be demonstrated to a business "
-            "audience in the same language in which it was built. The project described in this "
-            "report sits at the end of this evolution - a scikit-learn pipeline, visualised with "
-            "Matplotlib and delivered through Streamlit."
+            "Streamlit, launched in 2019, lets a Python script become an interactive web "
+            "application without front-end code, lowering the barrier between analysis and use."
         ),
     )
 
@@ -892,12 +886,8 @@ def chapter_5(doc):
     body(
         doc,
         (
-            "Churn probabilities can be combined with customer value to prioritise by expected "
-            "loss rather than by risk alone. A high-risk customer with a low monthly charge is "
-            "less valuable to retain than a medium-risk customer with a high charge and a long "
-            "expected lifetime. Although the current application does not compute customer "
-            "lifetime value, the probability it produces is the essential input to that "
-            "calculation: expected value at risk is approximately the churn probability multiplied "
+            "Churn probabilities combine with customer value to prioritise by expected loss, not "
+            "risk alone. Expected value at risk is approximately the churn probability multiplied "
             "by the present value of future margin."
         ),
     )

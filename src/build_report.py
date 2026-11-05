@@ -16,6 +16,7 @@ if str(BASE / "src") not in sys.path:
     sys.path.insert(0, str(BASE / "src"))
 
 from report_config import DOCX_PATH, STUDENT  # noqa: E402
+from report_appendix import build_appendix  # noqa: E402
 from report_chapters import build_chapters  # noqa: E402
 from report_front import (  # noqa: E402
     build_abstract,
@@ -57,6 +58,9 @@ def build():
 
     # Chapters 1-12
     build_chapters(doc)
+
+    # Appendix A: source code
+    build_appendix(doc)
 
     DOCX_PATH.parent.mkdir(parents=True, exist_ok=True)
     doc.save(DOCX_PATH)

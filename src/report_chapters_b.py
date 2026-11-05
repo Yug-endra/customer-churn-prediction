@@ -134,11 +134,9 @@ def chapter_7(doc):
     body(
         doc,
         (
-            "The model learns associations present in historical data; it does not establish "
-            "causation. A feature such as fiber-optic internet may be associated with churn "
-            "because of price, service quality, competition or a combination of factors that the "
-            "dataset does not record. Acting on an association as if it were a cause can lead to "
-            "ineffective or even harmful interventions."
+            "The model learns associations in historical data, not causation. Features such as "
+            "fiber-optic internet may reflect price, service quality or competition rather than a "
+            "direct cause, so associations should generate hypotheses, not prescriptions."
         ),
     )
 

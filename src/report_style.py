@@ -397,7 +397,7 @@ def table(doc, headers, rows, widths, font_size=9.5, header_fill=NAVY_HEX,
     return table_obj
 
 
-def code_block(doc, lines, cap=None, font_size=8.2):
+def code_block(doc, lines, cap=None, font_size=8.2, keep_together=True):
     if cap:
         p = doc.add_paragraph()
         p.paragraph_format.space_before = Pt(6)
@@ -414,7 +414,7 @@ def code_block(doc, lines, cap=None, font_size=8.2):
         pf.space_before = Pt(0)
         pf.space_after = Pt(0)
         pf.line_spacing = 1.0
-        pf.keep_with_next = idx < last
+        pf.keep_with_next = idx < last if keep_together else False
         p_pr = p._p.get_or_add_pPr()
         shd = OxmlElement("w:shd")
         shd.set(qn("w:val"), "clear")
