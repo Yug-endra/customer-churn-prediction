@@ -1,0 +1,40 @@
+# Python
+__pycache__/
+*.py[cod]
+*.egg-info/
+.venv/
+venv/
+env/
+.pytest_cache/
+
+# OS / editor
+.DS_Store
+Thumbs.db
+.vscode/
+.idea/
+
+# Streamlit
+.streamlit/secrets.toml
+
+# Logs / temp
+*.log
+*.tmp
+
+# Generated intermediates (reproducible)
+reports/reference.pdf
+reports/reference_dump.txt
+reports/reference_page_*.png
+reports/certificate_page_*.png
+reports/report_page_text.txt
+reports/report_pages/
+slides/review_png/
+"
+# Slide exports
+slides/render/
+slides/review_png/
+slides/~$*
+
+# Reference intermediates
+reports/reference_assets/
+reports/assets/*_render.png
+

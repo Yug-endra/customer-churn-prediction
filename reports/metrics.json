@@ -1,0 +1,135 @@
+{
+  "best_model": "Logistic Regression",
+  "best_model_metrics": {
+    "accuracy": 0.7395,
+    "precision": 0.506,
+    "recall": 0.7941,
+    "f1": 0.6181,
+    "roc_auc": 0.8458,
+    "pr_auc": 0.6532
+  },
+  "best_model_cv_roc_auc": 0.8474,
+  "all_models": {
+    "Logistic Regression": {
+      "cv_roc_auc_mean": 0.8474,
+      "cv_roc_auc_std": 0.011,
+      "cv_f1_mean": 0.6318,
+      "test": {
+        "accuracy": 0.7395,
+        "precision": 0.506,
+        "recall": 0.7941,
+        "f1": 0.6181,
+        "roc_auc": 0.8458,
+        "pr_auc": 0.6532
+      }
+    },
+    "Random Forest": {
+      "cv_roc_auc_mean": 0.8457,
+      "cv_roc_auc_std": 0.0093,
+      "cv_f1_mean": 0.628,
+      "test": {
+        "accuracy": 0.7679,
+        "precision": 0.5464,
+        "recall": 0.7406,
+        "f1": 0.6288,
+        "roc_auc": 0.8406,
+        "pr_auc": 0.652
+      }
+    },
+    "Gradient Boosting": {
+      "cv_roc_auc_mean": 0.8267,
+      "cv_roc_auc_std": 0.0059,
+      "cv_f1_mean": 0.571,
+      "test": {
+        "accuracy": 0.7807,
+        "precision": 0.6045,
+        "recall": 0.5027,
+        "f1": 0.5489,
+        "roc_auc": 0.8255,
+        "pr_auc": 0.6181
+      }
+    }
+  },
+  "dataset": {
+    "rows": 7043,
+    "columns_after_feature_engineering": 23,
+    "churn_rate_pct": 26.5,
+    "train_rows": 5634,
+    "test_rows": 1409
+  },
+  "top_features": [
+    {
+      "feature": "tenure",
+      "importance": 0.04664677465188976,
+      "std": 0.002501024102215387
+    },
+    {
+      "feature": "Contract",
+      "importance": 0.04435413383623107,
+      "std": 0.005739074434036815
+    },
+    {
+      "feature": "InternetService",
+      "importance": 0.04298418972332021,
+      "std": 0.007744764276514695
+    },
+    {
+      "feature": "MonthlyCharges",
+      "importance": 0.03875153926304825,
+      "std": 0.005825971434725129
+    },
+    {
+      "feature": "IsNewCustomer",
+      "importance": 0.019630232417956223,
+      "std": 0.002402885390158576
+    },
+    {
+      "feature": "NumServices",
+      "importance": 0.005852859369483487,
+      "std": 0.0019695741960482813
+    },
+    {
+      "feature": "TechSupport",
+      "importance": 0.004404014570255031,
+      "std": 0.0011465980991632557
+    },
+    {
+      "feature": "OnlineSecurity",
+      "importance": 0.004359343649624999,
+      "std": 0.0011656820537918713
+    },
+    {
+      "feature": "PaymentMethod",
+      "importance": 0.0030135110697771064,
+      "std": 0.0015385851986787326
+    },
+    {
+      "feature": "StreamingTV",
+      "importance": 0.002623851472956388,
+      "std": 0.0018783229076418195
+    }
+  ],
+  "eda": {
+    "overall_churn_rate": 26.5,
+    "churn_by_contract": {
+      "Month-to-month": 42.7,
+      "One year": 11.3,
+      "Two year": 2.8
+    },
+    "avg_tenure_churned": 18.0,
+    "avg_tenure_stayed": 37.6,
+    "avg_monthly_churned": 74.44,
+    "avg_monthly_stayed": 61.27,
+    "churn_by_internet": {
+      "DSL": 19.0,
+      "Fiber optic": 41.9,
+      "No": 7.4
+    },
+    "churn_by_payment": {
+      "Bank transfer (automatic)": 16.7,
+      "Credit card (automatic)": 15.2,
+      "Electronic check": 45.3,
+      "Mailed check": 19.1
+    }
+  }
+}

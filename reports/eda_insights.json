@@ -1,0 +1,23 @@
+{
+  "overall_churn_rate": 26.5,
+  "churn_by_contract": {
+    "Month-to-month": 42.7,
+    "One year": 11.3,
+    "Two year": 2.8
+  },
+  "avg_tenure_churned": 18.0,
+  "avg_tenure_stayed": 37.6,
+  "avg_monthly_churned": 74.44,
+  "avg_monthly_stayed": 61.27,
+  "churn_by_internet": {
+    "DSL": 19.0,
+    "Fiber optic": 41.9,
+    "No": 7.4
+  },
+  "churn_by_payment": {
+    "Bank transfer (automatic)": 16.7,
+    "Credit card (automatic)": 15.2,
+    "Electronic check": 45.3,
+    "Mailed check": 19.1
+  }
+}
